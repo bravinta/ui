@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { H1, P, ButtonLink } from "@bravinta/ui";
+---
+
+<Layout>
+  <div class="space-y-6">
+    <div class="space-y-2">
+      <H1>Bravinta UI</H1>
+      <P className="text-xl text-muted-foreground"
+        >Beautifully designed components that you can copy and paste into your
+        apps. Accessible. Customizable. Open Source.</P
+      >
+    </div>
+
+    <div class="flex items-center space-x-4 pt-4">
+      <ButtonLink href="/docs/introduction"> Get Started </ButtonLink>
+      <ButtonLink
+        variant="outline"
+        href="https://github.com/bravinta/ui"
+        target="_blank"
+      >
+        GitHub
+      </ButtonLink>
+    </div>
+
+    <div class="pt-8">
+      <h2
+        class="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0"
+      >
+        Introduction
+      </h2>
+      <P className="mt-4 leading-7">
+        This is a documentation site for Bravinta UI. It is built using Astro,
+        Tailwind CSS, and the UI components from the workspace.
+      </P>
+
+      <h2
+        class="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight"
+      >
+        Features
+      </h2>
+      <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
+        <li>Component-driven documentation</li>
+        <li>Built with Astro for fast performance</li>
+        <li>Styled with Tailwind CSS using workspace theme</li>
+        <li>Shadcn-like layout with responsive sidebars</li>
+      </ul>
+    </div>
+  </div>
+</Layout>

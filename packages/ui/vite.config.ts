@@ -19,6 +19,7 @@ export default defineConfig({
     minify: "oxc",
     sourcemap: true,
     reportCompressedSize: true,
+    emptyOutDir: true,
     lib: {
       entry: {
         index: resolve(root, "index.ts"),
