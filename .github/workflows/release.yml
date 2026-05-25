@@ -43,10 +43,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
         if: steps.check.outputs.should_publish == 'true'
 
-      - name: Build UI package
-        if: steps.check.outputs.should_publish == 'true'
-        run: pnpm build:ui
-
       - name: Publish to npm
         if: steps.check.outputs.should_publish == 'true'
         run: pnpm --filter @bravinta/ui publish --no-git-checks --provenance --access public
