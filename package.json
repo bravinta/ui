@@ -1,37 +1,48 @@
 {
   "name": "@bravinta/ui",
-  "version": "0.1.0",
-  "module": "index.ts",
+  "version": "0.1.4",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.ts",
-    "src/**/*",
-    "*.css",
-    "README*"
+    "dist",
+    "src/**/*.css"
   ],
   "exports": {
     ".": {
-      "types": "./index.ts",
-      "default": "./index.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./cn": {
-      "types": "./src/utils/cn.ts",
-      "default": "./src/utils/cn.ts"
+      "types": "./dist/cn.d.ts",
+      "import": "./dist/cn.js",
+      "require": "./dist/cn.cjs"
     },
     "./markdown": {
-      "types": "./src/markdown/index.ts",
-      "default": "./src/markdown/index.ts"
+      "types": "./dist/markdown.d.ts",
+      "import": "./dist/markdown.js",
+      "require": "./dist/markdown.cjs"
     },
     "./markdown.css": "./src/markdown/markdown.css",
     "./styles.css": "./src/styles/styles.css"
   },
-  "types": "./index.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
   "devDependencies": {
-    "@types/react": "^19.2.14"
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.14",
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.14",
+    "vite-plugin-dts": "^4.5.4"
   },
   "peerDependencies": {
-    "react": "^19.2.5",
-    "@base-ui/react": "^1.4.1"
+    "@base-ui/react": "^1.4.1",
+    "react": "^19.2.5"
   },
   "dependencies": {
     "tailwind-merge": "^3.5.0",
