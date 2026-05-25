@@ -1,4 +1,5 @@
 ---
+import { ButtonLink } from "@bravinta/ui";
 ---
 
 <aside
@@ -10,39 +11,54 @@
         <h4 class="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
           Getting Started
         </h4>
-        <div class="grid grid-flow-row auto-rows-max text-sm">
-          <a
+        <div class="grid grid-flow-row auto-rows-max text-sm gap-1">
+          <ButtonLink
+            variant="ghost"
+            size="sm"
             href="/docs/introduction"
-            class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
-            >Introduction</a
+            className="w-full justify-start text-muted-foreground"
           >
-          <a
+            Introduction
+          </ButtonLink>
+          <ButtonLink
+            variant="ghost"
+            size="sm"
             href="/docs/installation"
-            class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
-            >Installation</a
+            className="w-full justify-start text-muted-foreground"
           >
+            Installation
+          </ButtonLink>
         </div>
       </div>
       <div class="pb-4">
         <h4 class="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
           Components
         </h4>
-        <div class="grid grid-flow-row auto-rows-max text-sm">
-          <a
+        <div class="grid grid-flow-row auto-rows-max text-sm gap-1">
+          <ButtonLink
+            variant="ghost"
+            size="sm"
             href="/components/button"
-            class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
-            >Button</a
+            className="w-full justify-start text-muted-foreground"
           >
-          <a
+            Button
+          </ButtonLink>
+          <ButtonLink
+            variant="ghost"
+            size="sm"
             href="/components/input"
-            class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
-            >Input</a
+            className="w-full justify-start text-muted-foreground"
           >
-          <a
+            Input
+          </ButtonLink>
+          <ButtonLink
+            variant="ghost"
+            size="sm"
             href="/components/card"
-            class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
-            >Card</a
+            className="w-full justify-start text-muted-foreground"
           >
+            Card
+          </ButtonLink>
         </div>
       </div>
     </div>
