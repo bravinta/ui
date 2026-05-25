@@ -1,0 +1,112 @@
+/* expone utilidades nativas (text-4xl, font-bold, mt-10, etc.) */
+@reference "tailwindcss";
+/* expone variables de tema personalizadas (text-foreground, bg-muted, border-border, etc.) */
+@reference "../styles/styles.css";
+
+.md-container h1 {
+  @apply text-4xl font-bold tracking-tight text-foreground mt-10 mb-6;
+
+  @media (width >= 48rem) {
+    @apply text-5xl;
+  }
+}
+
+.md-container h2 {
+  @apply text-4xl font-bold text-foreground mt-10 mb-5;
+}
+
+.md-container h3 {
+  @apply text-xl font-bold text-foreground mt-8 mb-4;
+}
+
+.md-container h4 {
+  @apply text-lg font-semibold text-foreground mt-6 mb-4;
+}
+
+.md-container p {
+  @apply text-base leading-relaxed mb-6 text-foreground/80;
+}
+
+.md-container ul {
+  @apply list-disc list-inside mb-6 space-y-2 text-muted-foreground ml-4;
+}
+
+.md-container ol {
+  @apply list-decimal list-inside mb-6 space-y-2 text-muted-foreground ml-4;
+}
+
+.md-container li {
+  @apply leading-relaxed;
+}
+
+.md-container a {
+  @apply text-primary underline underline-offset-4 hover:text-primary/80 transition-colors;
+}
+
+.md-container strong {
+  @apply font-semibold text-foreground;
+}
+
+.md-container blockquote {
+  @apply border-l-2 border-primary pl-6 py-1 italic text-muted-foreground my-8 bg-muted/30 rounded-r-lg;
+}
+
+.md-container blockquote p:last-child {
+  @apply mb-0;
+}
+
+.md-container pre {
+  @apply bg-muted text-foreground p-5 rounded-xl overflow-x-auto mb-8 text-sm border border-border;
+}
+
+.md-container code {
+  @apply bg-muted text-foreground px-1.5 py-0.5 rounded-md text-sm font-mono border border-border whitespace-nowrap;
+}
+
+.md-container pre code {
+  @apply bg-transparent p-0 rounded-none border-none text-sm;
+}
+
+.md-container pre[data-code-block] {
+  @apply my-0 border-0 bg-transparent;
+}
+
+.md-container pre[data-code-block] code {
+  @apply whitespace-pre break-normal;
+}
+
+.md-container :is(h1, h2, h3, h4, h5, h6) * {
+  font-size: inherit;
+}
+
+.md-container img {
+  @apply rounded-2xl my-10 w-full object-cover border border-border shadow-sm;
+}
+
+.md-container hr {
+  @apply my-10 border-border;
+}
+
+.md-container table {
+  @apply my-0;
+}
+
+.md-container table thead {
+  @apply bg-card-foreground/5;
+}
+
+.md-container table th {
+  @apply font-semibold text-foreground px-6 py-4 border-b border-card-foreground/10;
+}
+
+.md-container table tbody tr {
+  @apply transition-colors hover:bg-card-foreground/5;
+}
+
+.md-container table td {
+  @apply px-6 py-4 text-muted-foreground border-b border-card-foreground/10;
+}
+
+.md-container table tr:last-child td {
+  @apply border-b-0;
+}

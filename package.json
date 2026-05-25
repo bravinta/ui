@@ -1,0 +1,40 @@
+{
+  "name": "@bravinta/ui",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "type": "module",
+  "files": [
+    "index.ts",
+    "src/**/*",
+    "*.css",
+    "README*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./cn": {
+      "types": "./src/utils/cn.ts",
+      "default": "./src/utils/cn.ts"
+    },
+    "./markdown": {
+      "types": "./src/markdown/index.ts",
+      "default": "./src/markdown/index.ts"
+    },
+    "./markdown.css": "./src/markdown/markdown.css",
+    "./styles.css": "./src/styles/styles.css"
+  },
+  "types": "./index.ts",
+  "devDependencies": {
+    "@types/react": "^19.2.14"
+  },
+  "peerDependencies": {
+    "react": "^19.2.5",
+    "@base-ui/react": "^1.4.1"
+  },
+  "dependencies": {
+    "tailwind-merge": "^3.5.0",
+    "tailwind-variants": "^3.2.2"
+  }
+}
