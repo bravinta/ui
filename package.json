@@ -28,6 +28,7 @@
     "./markdown.css": "./src/markdown/markdown.css",
     "./styles.css": "./src/styles/styles.css"
   },
+  "packageManager": "pnpm@11.1.3",
   "sideEffects": false,
   "scripts": {
     "build": "vite build",
