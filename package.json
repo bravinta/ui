@@ -2,7 +2,6 @@
   "name": "monorepo",
   "private": true,
   "scripts": {
-    "build:ui": "turbo run build --filter=@bravinta/ui",
     "build:docs": "turbo run build --filter=docs",
     "dev": "turbo run dev"
   },

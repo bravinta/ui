@@ -2,25 +2,23 @@
   "name": "@bravinta/ui",
   "version": "0.1.7",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
   "files": [
-    "dist",
-    "src/**/*.css"
+    "src",
+    "index.ts"
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "development": "./index.ts"
+      "types": "./index.ts",
+      "import": "./index.ts",
+      "default": "./index.ts"
     },
     "./markdown": {
-      "types": "./dist/markdown.d.ts",
-      "import": "./dist/markdown.js",
-      "require": "./dist/markdown.cjs",
-      "development": "./src/markdown/index.ts"
+      "types": "./src/markdown/index.ts",
+      "import": "./src/markdown/index.ts",
+      "default": "./src/markdown/index.ts"
     },
     "./markdown.css": "./src/markdown/markdown.css",
     "./styles.css": "./src/styles/styles.css"
@@ -32,17 +30,13 @@
   },
   "sideEffects": false,
   "scripts": {
-    "build": "vite build",
     "dev": "echo \"using source .ts directly\""
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.14",
-    "@vitejs/plugin-react": "^6.0.2",
-    "tailwindcss": "^4.3.0",
-    "vite": "^8.0.14",
-    "vite-plugin-dts": "^4.5.4"
+    "tailwindcss": "^4.3.0"
   },
   "peerDependencies": {
     "@base-ui/react": "^1.4.1",
