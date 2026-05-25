@@ -1,5 +1,5 @@
 import { Menu as MenuPrimitive } from "@base-ui/react/menu";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 // Abre el menú desplegable.
 const DropdownMenuTrigger = MenuPrimitive.Trigger;

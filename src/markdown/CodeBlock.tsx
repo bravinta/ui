@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ScrollArea } from "@base-ui/react/scroll-area";
 import { Button } from "../components/button";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 export interface CodeBlockProps extends React.HTMLAttributes<HTMLPreElement> {
   children?: React.ReactNode;

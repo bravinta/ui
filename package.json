@@ -15,11 +15,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./cn": {
-      "types": "./dist/cn.d.ts",
-      "import": "./dist/cn.js",
-      "require": "./dist/cn.cjs"
-    },
     "./markdown": {
       "types": "./dist/markdown.d.ts",
       "import": "./dist/markdown.js",
@@ -47,10 +42,10 @@
   },
   "peerDependencies": {
     "@base-ui/react": "^1.4.1",
-    "react": "^19.2.5"
+    "react": "^19.2.5",
+    "tailwind-merge": "^3.5.0"
   },
   "dependencies": {
-    "tailwind-merge": "^3.5.0",
     "tailwind-variants": "^3.2.2"
   }
 }

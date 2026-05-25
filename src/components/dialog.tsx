@@ -1,5 +1,5 @@
 import { Dialog as DialogPrimitive } from "@base-ui/react/dialog";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 // Abre el diálogo.
 const DialogTrigger = DialogPrimitive.Trigger;

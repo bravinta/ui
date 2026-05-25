@@ -22,7 +22,6 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(root, "index.ts"),
-        cn: resolve(root, "src/utils/cn.ts"),
         markdown: resolve(root, "src/markdown/index.ts"),
       },
       formats: ["es", "cjs"],

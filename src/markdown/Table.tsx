@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ScrollArea } from "@base-ui/react/scroll-area";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 export interface TableProps extends React.HTMLAttributes<HTMLTableElement> {
   children?: React.ReactNode;

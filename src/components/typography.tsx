@@ -1,5 +1,5 @@
 import type { HTMLAttributes, OlHTMLAttributes } from "react";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 function H1({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) {
   return (

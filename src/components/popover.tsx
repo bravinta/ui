@@ -1,5 +1,5 @@
 import { Popover as PopoverPrimitive } from "@base-ui/react/popover";
-import { cn } from "../utils/cn";
+import { cn } from "tailwind-variants";
 
 // Abre el popover desde el trigger.
 const PopoverTrigger = PopoverPrimitive.Trigger;
